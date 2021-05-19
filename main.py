@@ -13,7 +13,7 @@
 from flask import Flask, jsonify,redirect, request, render_template, url_for, Markup
 
 from VaccineSlotCovid import vaccineSlotsByDist
-
+import os
 
 
 app = Flask(__name__)
@@ -52,4 +52,4 @@ def covidSlot():
         
 if __name__ == '__main__':
     
-    app.run(host='0.0.0.0',port='00')
+    app.run(host='127.0.0.1', port=8080, debug=True)
